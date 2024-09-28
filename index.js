@@ -1,6 +1,6 @@
 
 const https = require('https');
-const debug = require('debug')('pm2:version-check')
+const debug = require('debug')('ssp:version-check')
 const qs    = require('querystring')
 
 var VersionCheck = {}
@@ -16,7 +16,7 @@ VersionCheck.runCheck = function(params, cb) {
   }
 
   var options = {
-    host: 'version.pm2.io',
+    host: 'version.ssp.io',
     path: path,
     strictSSL: false,
     timeout: 1200,
